@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+    <style>
+      .profile:hover::after {
+        display: inline-block;
+        content: attr(data-name);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="profile"
+      data-name="rickster"
+      data-youtube-name="rickstertube"
+      data-id="1"
+    >
+      Profile
+    </div>
+
+    <script></script>
+  </body>
+</html>
